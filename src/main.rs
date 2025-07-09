@@ -56,6 +56,7 @@ fn main() {
 
         let _ = queue!(
             stdout,
+            terminal::DisableLineWrap,
             cursor::MoveTo(0, h),
             cursor::Hide,
             terminal::Clear(terminal::ClearType::All)
